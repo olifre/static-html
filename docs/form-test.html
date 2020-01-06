@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Some JS form tests</title>
+<script type="text/javascript">
+function updateMail(mailField, IDvalue) {
+  mailField.value = IDvalue + "@example.com";
+};
+</script>
+</head>
+<body>
+<form id="register_complaint" action="#">
+ID: <input type="text" size="30" maxlength="155" name="name" oninput="updateMail(this.form.elements['email'], this.value);" /><br />
+Mail: <input type="text" size="30" maxlength="155" name="email"  /><br />
+<input type="button" name="submit" value="Submit" /> 
+</form>
+</body>
+</html>
